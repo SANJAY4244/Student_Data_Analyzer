@@ -16,8 +16,7 @@ with open("model/label_encoder.pkl", "rb") as f:
 
 # Title
 st.title("Student Feedback Analyzer")
-
-# Input
+model = load_model("model/feedback_model.h5")
 feedback = st.text_area("Enter Student Feedback")
 
 # Button
